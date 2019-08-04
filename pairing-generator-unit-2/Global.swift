@@ -9,16 +9,14 @@
 import Foundation
 
 struct Global {
+    static let placeholderPersonImageName = "placeholder"
+    
     struct Data {
         static var fellowNames: [String] {
         return ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackon", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
             //absent: , "Wally Suarez",
         }
     
-        static func getPreviousPairs(forName name: String) -> [String] {
-            return allPreviousPairs[name] ?? [String]()
-        }
-        
         private static let allPreviousPairs = [
             "Hildy Abreu" : ["Wally Suarez","Kevin Natera"],
             "Alyson Abril" : ["Jocelyn Boyd","Sam Roman"],
@@ -53,5 +51,10 @@ struct Global {
             "Kimball Yang" : ["Albert Oliveira","Levi Davis"],
             "Rad Valongo": ["Phoenix McKnight"]
         ]
+        
+        static func getPreviousPairs(forName name: String) -> [String] {
+            return allPreviousPairs[name] ?? [String]()
+        }
+
     }
 }
