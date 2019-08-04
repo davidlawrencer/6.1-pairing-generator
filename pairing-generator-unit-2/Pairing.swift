@@ -9,6 +9,6 @@
 import Foundation
 
 struct Pairing {
-    let lhs: Student
-    let rhs: Student
+    let lhs: Fellow
+    let rhs: Fellow
 }

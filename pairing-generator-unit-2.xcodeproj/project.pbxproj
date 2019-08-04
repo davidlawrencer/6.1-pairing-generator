@@ -14,7 +14,7 @@
 		5425121A22F082D9002330F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5425121822F082D9002330F0 /* LaunchScreen.storyboard */; };
 		5425122522F082D9002330F0 /* pairing_generator_unit_2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425122422F082D9002330F0 /* pairing_generator_unit_2Tests.swift */; };
 		5425123022F082D9002330F0 /* pairing_generator_unit_2UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5425122F22F082D9002330F0 /* pairing_generator_unit_2UITests.swift */; };
-		542512BB22F0CB10002330F0 /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542512BA22F0CB10002330F0 /* Student.swift */; };
+		542512BB22F0CB10002330F0 /* Fellow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542512BA22F0CB10002330F0 /* Fellow.swift */; };
 		542512BD22F0EBA6002330F0 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542512BC22F0EBA6002330F0 /* Classroom.swift */; };
 		54C27D2122F71E4100BFF13E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C27D2022F71E4100BFF13E /* Global.swift */; };
 		54C27D2322F7252A00BFF13E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C27D2222F7252A00BFF13E /* Person.swift */; };
@@ -53,7 +53,7 @@
 		5425122B22F082D9002330F0 /* pairing-generator-unit-2UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pairing-generator-unit-2UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5425122F22F082D9002330F0 /* pairing_generator_unit_2UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = pairing_generator_unit_2UITests.swift; sourceTree = "<group>"; };
 		5425123122F082D9002330F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		542512BA22F0CB10002330F0 /* Student.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		542512BA22F0CB10002330F0 /* Fellow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fellow.swift; sourceTree = "<group>"; };
 		542512BC22F0EBA6002330F0 /* Classroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom.swift; sourceTree = "<group>"; };
 		54C27D2022F71E4100BFF13E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		54C27D2222F7252A00BFF13E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -112,7 +112,7 @@
 				5425123D22F082E8002330F0 /* Supporting Files */,
 				5425121122F082D8002330F0 /* ViewController.swift */,
 				5425121322F082D8002330F0 /* Main.storyboard */,
-				542512BA22F0CB10002330F0 /* Student.swift */,
+				542512BA22F0CB10002330F0 /* Fellow.swift */,
 				54CF9BD722F10434002381AB /* Pairing.swift */,
 				542512BC22F0EBA6002330F0 /* Classroom.swift */,
 				54C27D2022F71E4100BFF13E /* Global.swift */,
@@ -287,7 +287,7 @@
 				54C27D2122F71E4100BFF13E /* Global.swift in Sources */,
 				54CF9BD822F10434002381AB /* Pairing.swift in Sources */,
 				54C27D2322F7252A00BFF13E /* Person.swift in Sources */,
-				542512BB22F0CB10002330F0 /* Student.swift in Sources */,
+				542512BB22F0CB10002330F0 /* Fellow.swift in Sources */,
 				54C27D2522F725F600BFF13E /* String.swift in Sources */,
 				542512BD22F0EBA6002330F0 /* Classroom.swift in Sources */,
 			);

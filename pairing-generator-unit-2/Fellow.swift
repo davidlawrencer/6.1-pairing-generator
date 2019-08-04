@@ -1,5 +1,5 @@
 //
-//  Student.swift
+//  Fellow.swift
 //  pairing-generator-unit-2
 //
 //  Created by David Rifkin on 7/30/19.
@@ -8,27 +8,16 @@
 
 import Foundation
 
-struct Student: Person {
+struct Fellow: Person {
     let name: String
     let image: String
-    let pastMatches: [String]
+    private let pastMatches: [String]
     
     init(name: String) {
         self.name = name
         image = name.getFormattedImageName()
         pastMatches = Global.Data.getPreviousPairs(forName: name)
     }
-//    func pickMatch() -> Student {
-//        while true {
-//            let randomStudent = getRandomStudent()
-//
-//            if checkIfAlreadyPaired(currentPerson: self,potentialMatch: randomStudent.name){
-//                continue
-//            } else {
-//                return randomStudent
-//            }
-//        }
-//    }
     
     func seeIfAlreadyPaired(potentialMatch name: String) -> Bool {
         return self.pastMatches.contains(name)

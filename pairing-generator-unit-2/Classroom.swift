@@ -9,22 +9,22 @@
 import Foundation
 
 struct Classroom {
-    var students = [Student]()
+    private var fellows = [Fellow]()
     var pairs = [Pairing]()
     
     init() {
-        students = generateStudentsFromAttendance()
+        fellows = generateFellowsFromAttendance()
     }
     
-    private func generateStudentsFromAttendance() -> [Student] {
-        let studentNames = Global.Data.fellowNames
-        return studentNames.map({a in
-            Student(name: a)
+    private func generateFellowsFromAttendance() -> [Fellow] {
+        let fellowNames = Global.Data.fellowNames
+        return fellowNames.map({a in
+            Fellow(name: a)
         })
     }
         
-    private func getRandomStudent() -> Student? {
-        return students.randomElement()
+    private func getRandomFellow() -> Fellow? {
+        return fellows.randomElement()
     }
 }
 
