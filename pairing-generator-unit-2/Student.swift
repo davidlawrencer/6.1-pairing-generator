@@ -16,7 +16,7 @@ struct Student: Person {
     init(name: String) {
         self.name = name
         image = String.getFormattedImageName(name: name)
-        pastMatches = Global.getPreviousPairs(forName: name)
+        pastMatches = Global.Data.getPreviousPairs(forName: name)
     }
 //    func pickMatch() -> Student {
 //        while true {

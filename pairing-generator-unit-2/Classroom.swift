@@ -16,7 +16,7 @@ struct Classroom {
     }
     
     private func generateStudentsFromAttendance() -> [Student] {
-        let studentNames = Global.fellowNames
+        let studentNames = Global.Data.fellowNames
         return studentNames.map({a in
             Student(name: a)
         })

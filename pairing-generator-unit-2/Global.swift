@@ -9,13 +9,17 @@
 import Foundation
 
 struct Global {
-    static var fellowNames: [String] {
+    struct Data {
+        static var fellowNames: [String] {
         return ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackon", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
-        //absent: , "Wally Suarez",
-    }
+            //absent: , "Wally Suarez",
+        }
     
-    static func getPreviousPairs(forName name: String) -> [String] {
-        let allPreviousPairs = [
+        static func getPreviousPairs(forName name: String) -> [String] {
+            return allPreviousPairs[name] ?? [String]()
+        }
+        
+        private static let allPreviousPairs = [
             "Hildy Abreu" : ["Wally Suarez","Kevin Natera"],
             "Alyson Abril" : ["Jocelyn Boyd","Sam Roman"],
             "Ayoola Abudu" : ["Adam Jackson","Kary Martinez"],
@@ -49,6 +53,5 @@ struct Global {
             "Kimball Yang" : ["Albert Oliveira","Levi Davis"],
             "Rad Valongo": ["Phoenix McKnight"]
         ]
-        return allPreviousPairs[name] ?? [String]()
     }
 }
