@@ -18,7 +18,7 @@
 		542512BD22F0EBA6002330F0 /* Classroom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542512BC22F0EBA6002330F0 /* Classroom.swift */; };
 		54C27D2122F71E4100BFF13E /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C27D2022F71E4100BFF13E /* Global.swift */; };
 		54C27D2322F7252A00BFF13E /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C27D2222F7252A00BFF13E /* Person.swift */; };
-		54C27D2522F725F600BFF13E /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C27D2422F725F600BFF13E /* String.swift */; };
+		54C27D2522F725F600BFF13E /* String+ImageName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54C27D2422F725F600BFF13E /* String+ImageName.swift */; };
 		54CF9BD822F10434002381AB /* Pairing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54CF9BD722F10434002381AB /* Pairing.swift */; };
 /* End PBXBuildFile section */
 
@@ -57,7 +57,7 @@
 		542512BC22F0EBA6002330F0 /* Classroom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classroom.swift; sourceTree = "<group>"; };
 		54C27D2022F71E4100BFF13E /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
 		54C27D2222F7252A00BFF13E /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		54C27D2422F725F600BFF13E /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		54C27D2422F725F600BFF13E /* String+ImageName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+ImageName.swift"; sourceTree = "<group>"; };
 		54CF9BD722F10434002381AB /* Pairing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pairing.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,17 +109,13 @@
 		5425120E22F082D8002330F0 /* pairing-generator-unit-2 */ = {
 			isa = PBXGroup;
 			children = (
-				5425123D22F082E8002330F0 /* Supporting Files */,
 				5425121122F082D8002330F0 /* ViewController.swift */,
 				5425121322F082D8002330F0 /* Main.storyboard */,
-				542512BA22F0CB10002330F0 /* Fellow.swift */,
-				54CF9BD722F10434002381AB /* Pairing.swift */,
-				542512BC22F0EBA6002330F0 /* Classroom.swift */,
-				54C27D2022F71E4100BFF13E /* Global.swift */,
-				54C27D2422F725F600BFF13E /* String.swift */,
-				54C27D2222F7252A00BFF13E /* Person.swift */,
-				5425121622F082D9002330F0 /* Assets.xcassets */,
+				54C27D2622F7365700BFF13E /* Models */,
+				54C27D2722F7366300BFF13E /* Helpers */,
 				5425121B22F082D9002330F0 /* Info.plist */,
+				5425121622F082D9002330F0 /* Assets.xcassets */,
+				5425123D22F082E8002330F0 /* Supporting Files */,
 			);
 			path = "pairing-generator-unit-2";
 			sourceTree = "<group>";
@@ -149,6 +145,26 @@
 				5425121822F082D9002330F0 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		54C27D2622F7365700BFF13E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				542512BC22F0EBA6002330F0 /* Classroom.swift */,
+				542512BA22F0CB10002330F0 /* Fellow.swift */,
+				54CF9BD722F10434002381AB /* Pairing.swift */,
+				54C27D2222F7252A00BFF13E /* Person.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		54C27D2722F7366300BFF13E /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				54C27D2022F71E4100BFF13E /* Global.swift */,
+				54C27D2422F725F600BFF13E /* String+ImageName.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,7 +304,7 @@
 				54CF9BD822F10434002381AB /* Pairing.swift in Sources */,
 				54C27D2322F7252A00BFF13E /* Person.swift in Sources */,
 				542512BB22F0CB10002330F0 /* Fellow.swift in Sources */,
-				54C27D2522F725F600BFF13E /* String.swift in Sources */,
+				54C27D2522F725F600BFF13E /* String+ImageName.swift in Sources */,
 				542512BD22F0EBA6002330F0 /* Classroom.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

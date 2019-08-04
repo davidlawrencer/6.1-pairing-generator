@@ -10,12 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var myClassroom = Classroom()
+    
     @IBOutlet weak var topPairName: UILabel!
     @IBOutlet weak var bottomPairName: UILabel!
     @IBOutlet weak var bottomPairImage: UIImageView!
     @IBOutlet weak var topPairImage: UIImageView!
     
     @IBAction func gimmeNewPairButtonPressed(_ sender: UIButton) {
+        
     }
     
     override func viewDidLoad() {
