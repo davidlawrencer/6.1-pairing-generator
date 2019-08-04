@@ -17,11 +17,15 @@ struct Classroom {
     }
     
     mutating func getAPair() -> Pairing? {
+        guard unassignedFellows.count > 0 else {
+            return nil
+        }
+        
         if unassignedFellows.count == 1 {
             return Pairing(lhs: unassignedFellows[0], rhs: Fellow(name: Global.placeholderPersonName))
         }
         
-        if let firstFellow = getRandomFellow(), unassignedFellows.count > 1 {
+        if let firstFellow = getRandomFellow(){
             while true {
                 if let secondFellow = getRandomFellow(), (secondFellow != firstFellow && !firstFellow.seeIfAlreadyPaired(with:  secondFellow.name)) {
                     let newPair = Pairing(lhs: firstFellow, rhs: secondFellow)
