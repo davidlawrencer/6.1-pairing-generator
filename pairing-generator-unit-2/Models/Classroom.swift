@@ -21,7 +21,7 @@ struct Classroom {
             return Pairing(lhs: unassignedFellows[0], rhs: Fellow(name: Global.placeholderPersonName))
         }
         
-        if let firstFellow = unassignedFellows.first, unassignedFellows.count > 1 {
+        if let firstFellow = getRandomFellow(), unassignedFellows.count > 1 {
             while true {
                 if let secondFellow = getRandomFellow(), (secondFellow != firstFellow && !firstFellow.seeIfAlreadyPaired(with:  secondFellow.name)) {
                     let newPair = Pairing(lhs: firstFellow, rhs: secondFellow)
