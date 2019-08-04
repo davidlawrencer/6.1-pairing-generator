@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Student {
+struct Student: Person {
     let name: String
     let image: String
     let pastMatches: [String]
