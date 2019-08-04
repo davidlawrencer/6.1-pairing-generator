@@ -13,6 +13,11 @@ struct Student: Person {
     let image: String
     let pastMatches: [String]
     
+    init(name: String) {
+        self.name = name
+        image = String.getFormattedImageName(name: name)
+        pastMatches = Global.getPreviousPairs(forName: name)
+    }
 //    func pickMatch() -> Student {
 //        while true {
 //            let randomStudent = getRandomStudent()
