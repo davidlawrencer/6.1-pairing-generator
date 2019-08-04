@@ -21,11 +21,13 @@ struct Classroom {
             return nil
         }
         
-        if unassignedFellows.count == 1 {
-            return Pairing(lhs: unassignedFellows[0], rhs: Fellow(name: Global.placeholderPersonName))
-        }
-        
         if let firstFellow = getRandomFellow(){
+            //TODO: clean this up
+            if unassignedFellows.count == 1 {
+                let newPair = Pairing(lhs: firstFellow, rhs: Fellow(name: Global.placeholderPersonName))
+                accountForNewPair(newPair)
+                return newPair
+            }
             while true {
                 if let secondFellow = getRandomFellow(), (secondFellow != firstFellow && !firstFellow.seeIfAlreadyPaired(with:  secondFellow.name)) {
                     let newPair = Pairing(lhs: firstFellow, rhs: secondFellow)
