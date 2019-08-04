@@ -9,7 +9,7 @@
 import Foundation
 
 extension String {
-    static func getFormattedImageName(name: String) -> String {
-        return name.lowercased().split(separator: " ").joined(separator: "-")
+    func getFormattedImageName() -> String {
+        return self.lowercased().split(separator: " ").joined(separator: "-")
     }
 }
