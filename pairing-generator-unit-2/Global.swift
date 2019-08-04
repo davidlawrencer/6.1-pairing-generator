@@ -9,9 +9,9 @@
 import Foundation
 
 struct Global {
-    static func getStudentNames() -> [String]{
-        return ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackon", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "FredlynePierre-Paul", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
-        //absent: , "Josh Wynter","Wally Suarez",
+    static var fellowNames: [String] {
+        return ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackon", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
+        //absent: , "Wally Suarez",
     }
     
     static func getPreviousPairs(forName name: String) -> [String] {
@@ -21,10 +21,10 @@ struct Global {
             "Ayoola Abudu" : ["Adam Jackson","Kary Martinez"],
             "Jocelyn Boyd" : ["Alyson Abril"],
             "Bee Brown" : ["Malcolm Turnquest","Jack Wong"],
-            "Krystal Campbell" : ["Sunni Tang","Fredlyne Pierre-Paul"],
+            "Krystal Campbell" : ["Sunni Tang"],
             "Ian Cervone" : ["Kary Martinez","Michelle Cueva"],
             "Michelle Cueva" : ["Alex Legaspi","Ian Cervone"],
-            "Levi Davis" : ["Fredlyne Pierre-Paul","Kimball Yang"],
+            "Levi Davis" : ["Kimball Yang"],
             "Angela Garrovillas" : ["Liana Norman","Alex Legaspi"],
             "Anthony Gonzalez" : ["Eric Widjaja","Eric Mei","Sunni Tang"],
             "Mariel Hoepelman" : ["Tia Lendor","Eric Widjaja"],
@@ -39,7 +39,6 @@ struct Global {
             "Albert Oliveira" : ["Kimball Yang","Aaron Pachesa"],
             "Aaron Pachesa" : ["Jason Ruan","Albert Oliveira"],
             "Neema Philippe" : ["Kevin Natera","Wally Suarez"],
-            "Fredlyne Pierre-Paul" : ["Levi Davis","Krystal Campbell"],
             "Sam Roman" : ["Alyson Abril"],
             "Jason Ruan" : ["Aaron Pachesa","Liana Norman"],
             "Wally Suarez" : ["Hildy Abreu","Neema Philippe"],
