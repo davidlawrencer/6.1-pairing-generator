@@ -23,3 +23,9 @@ struct Fellow: Person {
         return self.pastMatches.contains(name)
     }
 }
+
+extension Fellow: Equatable {
+    static func ==(lhs: Fellow, rhs: Fellow) -> Bool {
+        return lhs.name == rhs.name
+    }
+}
