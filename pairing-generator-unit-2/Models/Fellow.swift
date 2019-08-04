@@ -19,7 +19,7 @@ struct Fellow: Person {
         pastMatches = Global.Data.getPreviousPairs(forName: name)
     }
     
-    func seeIfAlreadyPaired(potentialMatch name: String) -> Bool {
+    func seeIfAlreadyPaired(with name: String) -> Bool {
         return self.pastMatches.contains(name)
     }
 }

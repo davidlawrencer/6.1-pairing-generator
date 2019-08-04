@@ -9,7 +9,7 @@
 import Foundation
 
 struct Global {
-    static let placeholderPersonImageName = "placeholder"
+    static let placeholderPersonName = "placeholder"
     
     struct Data {
         static var fellowNames: [String] {
