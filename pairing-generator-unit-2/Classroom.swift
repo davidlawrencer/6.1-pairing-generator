@@ -10,6 +10,7 @@ import Foundation
 
 struct Classroom {
     var students = [Student]()
+    var pairs = [Pairing]()
     
     init() {
         students = generateStudentsFromAttendance()
