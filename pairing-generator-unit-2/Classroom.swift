@@ -23,13 +23,9 @@ struct Classroom {
     }
     
     private func createNewStudentFromName(_ name: String) -> Student {
-        let imageName = getFormattedImageName(name: name)
+        let imageName = String.getFormattedImageName(name: name)
         let pastMatches = Global.getPreviousPairs(forName: name)
         return Student(name: name, image: imageName, pastMatches: pastMatches)
-    }
-    
-    private func getFormattedImageName(name: String) -> String {
-            return name.lowercased().split(separator: " ").joined(separator: "-")
     }
     
     private func getRandomStudent() -> Student? {

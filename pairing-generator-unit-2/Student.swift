@@ -28,5 +28,4 @@ struct Student: Person {
     func seeIfAlreadyPaired(potentialMatch name: String) -> Bool {
         return self.pastMatches.contains(name)
     }
-
 }
