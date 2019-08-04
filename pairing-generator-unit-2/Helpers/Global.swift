@@ -13,7 +13,7 @@ struct Global {
     
     struct Data {
         static var fellowNames: [String] {
-        return ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackon", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
+        return ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackson", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
             //absent: , "Wally Suarez",
         }
     
