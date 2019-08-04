@@ -31,8 +31,8 @@ struct Classroom {
             while true {
                 if let secondFellow = getRandomFellow(), (secondFellow != firstFellow && !firstFellow.seeIfAlreadyPaired(with:  secondFellow.name)) {
                     let newPair = Pairing(lhs: firstFellow, rhs: secondFellow)
-                        accountForNewPair(newPair)
-                        return newPair
+                    accountForNewPair(newPair)
+                    return newPair
                 } else {
                     continue
                 }
@@ -47,7 +47,7 @@ struct Classroom {
             Fellow(name: a)
         })
     }
-        
+    
     private func getRandomFellow() -> Fellow? {
         return unassignedFellows.randomElement()
     }

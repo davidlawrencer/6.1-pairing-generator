@@ -11,7 +11,7 @@ import UIKit
 
 struct Fellow: Person {
     let name: String
-    let image: String
+    internal let image: String
     private let pastMatches: [String]
     
     init(name: String) {

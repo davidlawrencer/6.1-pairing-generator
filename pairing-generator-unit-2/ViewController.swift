@@ -9,8 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    var myClassroom = Classroom()
+    
+    private var myClassroom = Classroom()
     
     @IBOutlet weak var topPairName: UILabel!
     @IBOutlet weak var bottomPairName: UILabel!
@@ -36,9 +36,11 @@ class ViewController: UIViewController {
         bottomPairName.text = pair.rhs.name
         bottomPairImage.image = pair.rhs.getProfileImage()
     }
+    
     private func presentCompletedMatchingAlert() {
         let alert = UIAlertController(title: "Sorry Bruv", message: "All fellows have been matched", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+        let alertAction = UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil)
+        alert.addAction(alertAction)
         self.present(alert, animated: true)
     }
 }
