@@ -37,7 +37,7 @@ class ViewController: UIViewController {
         bottomPairImage.image = pair.rhs.getProfileImage()
     }
     private func presentCompletedMatchingAlert() {
-        let alert = UIAlertController(title: "Zero Remaining Fellows", message: "All fellows have been matched", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Sorry Bruv", message: "All fellows have been matched", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
         self.present(alert, animated: true)
     }
