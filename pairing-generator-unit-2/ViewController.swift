@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         if let pair = myClassroom.getAPair() {
             updateViewUsingPair(pair: pair)
         } else {
-            //TODO: present alert saying no more pairs
+            presentCompletedMatchingAlert()
         }
     }
     
@@ -35,6 +35,11 @@ class ViewController: UIViewController {
         topPairImage.image = pair.lhs.getProfileImage()
         bottomPairName.text = pair.rhs.name
         bottomPairImage.image = pair.rhs.getProfileImage()
+    }
+    private func presentCompletedMatchingAlert() {
+        let alert = UIAlertController(title: "Zero Remaining Fellows", message: "All fellows have been matched", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil))
+        self.present(alert, animated: true)
     }
 }
 
