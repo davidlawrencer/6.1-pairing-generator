@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Fellow: Person {
     let name: String
@@ -17,6 +18,10 @@ struct Fellow: Person {
         self.name = name
         image = name.getFormattedImageName()
         pastMatches = Global.Data.getPreviousPairs(forName: name)
+    }
+    
+    func getProfileImage() -> UIImage {
+        return UIImage(named: image) ?? UIImage(named: Global.placeholderPersonName.getFormattedImageName())!
     }
     
     func seeIfAlreadyPaired(with name: String) -> Bool {

@@ -7,8 +7,10 @@
 //
 
 import Foundation
+import UIKit
 
 protocol Person {
     var name: String { get }
     var image: String { get }
+    func getProfileImage() -> UIImage
 }
