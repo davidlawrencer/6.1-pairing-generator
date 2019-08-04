@@ -19,10 +19,7 @@ class ViewController: UIViewController {
     
     @IBAction func gimmeNewPairButtonPressed(_ sender: UIButton) {
         if let pair = myClassroom.getAPair() {
-            topPairName.text = pair.lhs.name
-            topPairImage.image = pair.lhs.getProfileImage()
-            bottomPairName.text = pair.rhs.name
-            bottomPairImage.image = pair.rhs.getProfileImage()
+            updateViewUsingPair(pair: pair)
         } else {
             //TODO: present alert saying no more pairs
         }
@@ -32,7 +29,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
+    
+    private func updateViewUsingPair(pair: Pairing) {
+        topPairName.text = pair.lhs.name
+        topPairImage.image = pair.lhs.getProfileImage()
+        bottomPairName.text = pair.rhs.name
+        bottomPairImage.image = pair.rhs.getProfileImage()
+    }
 }
 
