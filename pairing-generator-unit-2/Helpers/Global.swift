@@ -13,10 +13,9 @@ struct Global {
     
     struct Data {
         static var fellowNames: [String] = ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackson", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
-            //absent: , "Wally Suarez",
     
         private static let allPreviousPairs = [
-            "Hildy Abreu" : ["Wally Suarez","Kevin Natera","Ayoola Abudu"],
+            "Hildy Abreu" : ["Kevin Natera","Ayoola Abudu"],
             "Alyson Abril" : ["Jocelyn Boyd","Sam Roman","Malcolm Turnquest"],
             "Ayoola Abudu" : ["Adam Jackson","Kary Martinez", "Hildy Abreu"],
             "Jocelyn Boyd" : ["Alyson Abril","Eric Widjaja", "Angela Garrovillas"],
@@ -38,10 +37,9 @@ struct Global {
             "Liana Norman" : ["Angela Garrovillas","Jason Ruan","Kary Martinez"],
             "Albert Oliveira" : ["Kimball Yang","Aaron Pachesa","Sunni Tang"],
             "Aaron Pachesa" : ["Jason Ruan","Albert Oliveira","Jack Wong"],
-            "Neema Philippe" : ["Kevin Natera","Wally Suarez","Ian Cervone"],
+            "Neema Philippe" : ["Kevin Natera","Ian Cervone"],
             "Sam Roman" : ["Alyson Abril","Krystal Campbell"],
             "Jason Ruan" : ["Aaron Pachesa","Liana Norman","Kevin Natera"],
-            "Wally Suarez" : ["Hildy Abreu","Neema Philippe"],
             "Sunni Tang" : ["Krystal Campbell","Anthony Gonzalez","Eric Mei","Albert Oliveira"],
             "Malcolm Turnquest" : ["Bee Brown","Alyson Abril"],
             "Jack Wong" : ["Bee Brown","Aaron Pachesa"],

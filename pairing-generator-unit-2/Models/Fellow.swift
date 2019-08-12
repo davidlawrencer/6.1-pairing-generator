@@ -13,6 +13,7 @@ struct Fellow: Person {
     let name: String
     internal let image: String
     private let pastMatches: [String]
+    var timesAtBoard = 0
     
     init(name: String) {
         self.name = name
@@ -25,7 +26,11 @@ struct Fellow: Person {
     }
     
     func seeIfAlreadyPaired(with name: String) -> Bool {
-        return self.pastMatches.contains(name)
+        return pastMatches.contains(name)
+    }
+    
+    mutating func wentToBoard() {
+        timesAtBoard += 1
     }
 }
 
