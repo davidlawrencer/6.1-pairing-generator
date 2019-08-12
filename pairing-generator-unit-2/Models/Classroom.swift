@@ -48,6 +48,7 @@ struct Classroom {
         })
     }
     
+    //MARK: -- Private and private mutators
     private func getRandomFellow() -> Fellow? {
         return unassignedFellows.randomElement()
     }

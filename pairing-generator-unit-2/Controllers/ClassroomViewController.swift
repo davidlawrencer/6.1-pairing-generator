@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ClassroomViewController: UIViewController {
     
     private var myClassroom = Classroom()
     
@@ -42,6 +42,7 @@ class ViewController: UIViewController {
         let alertAction = UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil)
         alert.addAction(alertAction)
         self.present(alert, animated: true)
+        print(self.myClassroom.pairs)
     }
 }
 
