@@ -86,6 +86,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		540AB7532301FDBF007B790B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				5425121122F082D8002330F0 /* ClassroomViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5425120322F082D8002330F0 = {
 			isa = PBXGroup;
 			children = (
@@ -109,8 +117,8 @@
 		5425120E22F082D8002330F0 /* pairing-generator-unit-2 */ = {
 			isa = PBXGroup;
 			children = (
-				5425121122F082D8002330F0 /* ClassroomViewController.swift */,
 				5425121322F082D8002330F0 /* Main.storyboard */,
+				540AB7532301FDBF007B790B /* Controllers */,
 				54C27D2622F7365700BFF13E /* Models */,
 				54C27D2722F7366300BFF13E /* Helpers */,
 				5425121B22F082D9002330F0 /* Info.plist */,
