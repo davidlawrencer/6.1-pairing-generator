@@ -18,7 +18,7 @@ class ClassroomViewController: UIViewController {
     @IBOutlet weak var topPairImage: UIImageView!
     
     @IBAction func gimmeNewPairButtonPressed(_ sender: UIButton) {
-        if let pair = myClassroom.getAPair() {
+        if let pair = myClassroom.createAndReturnNewPair() {
             updateViewUsingPair(pair: pair)
         } else {
             presentCompletedMatchingAlert()

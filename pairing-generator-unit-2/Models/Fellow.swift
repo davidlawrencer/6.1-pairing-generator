@@ -37,6 +37,10 @@ struct Fellow: Person {
         return pastMatches.contains(name)
     }
     
+    mutating func addNewPastPair(name:String) {
+        pastMatches.append(name)
+    }
+    
     mutating func wentToBoard() {
         timesAtBoard += 1
     }

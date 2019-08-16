@@ -16,7 +16,7 @@ struct Classroom {
         unassignedFellows = generateFellowsFromAttendance()
     }
     
-    mutating func getAPair() -> Pairing? {
+    mutating func createAndReturnNewPair() -> Pairing? {
         guard unassignedFellows.count > 0 else {
             return nil
         }
