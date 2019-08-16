@@ -12,13 +12,21 @@ import UIKit
 struct Fellow: Person {
     let name: String
     internal let image: String
-    private let pastMatches: [String]
+    private var pastMatches: [String]
     var timesAtBoard = 0
     
-    init(name: String) {
+    init(name: String, pastMatches: [String],timesAtBoard: Int) {
         self.name = name
-        image = name.getFormattedImageName()
-        pastMatches = Global.Data.getPreviousPairs(forName: name)
+        self.image = name.getFormattedImageName()
+        self.pastMatches = pastMatches
+        self.timesAtBoard = timesAtBoard
+    }
+    
+    init(withNameForPlaceHolder: String) {
+        name = withNameForPlaceHolder
+        image = withNameForPlaceHolder.getFormattedImageName()
+        pastMatches = [String]()
+        timesAtBoard = 0
     }
     
     func getProfileImage() -> UIImage {

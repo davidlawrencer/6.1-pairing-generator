@@ -24,7 +24,7 @@ struct Classroom {
         if let firstFellow = getRandomFellow(){
             //TODO: clean this up
             if unassignedFellows.count == 1 {
-                let newPair = Pairing(lhs: firstFellow, rhs: Fellow(name: Global.placeholderPersonName))
+                let newPair = Pairing(lhs: firstFellow, rhs: Fellow(withNameForPlaceHolder: Global.placeholderPersonName))
                 accountForNewPair(newPair)
                 return newPair
             }
@@ -42,10 +42,7 @@ struct Classroom {
     }
     
     private func generateFellowsFromAttendance() -> [Fellow] {
-        let fellowNames = Global.Data.fellowNames
-        return fellowNames.map({a in
-            Fellow(name: a)
-        })
+        return Global.Data.allFellows
     }
     
     //MARK: -- Private and private mutators

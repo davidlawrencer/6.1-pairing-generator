@@ -12,44 +12,7 @@ struct Global {
     static let placeholderPersonName = "placeholder"
     
     struct Data {
-        static var fellowNames: [String] = ["Hildy Abreu", "Alyson Abril", "Ayoola Abudu",  "Bee Brown", "Krystal Campbell", "Ian Cervone", "Michelle Cueva", "Levi Davis", "Angela Garrovillas", "Anthony Gonzalez", "Mariel Hoepelman", "Adam Jackson", "Alex Legaspi", "Tia Lendor", "Kary Martinez", "Phoenix McKnight", "Eric Mei", "Kevin Natera", "Liana Norman", "Albert Oliveira", "Aaron Pachesa", "Neema Philippe", "Sam Roman", "Jason Ruan",  "Sunni Tang", "Jack Wong", "Eric Widjaja", "Kimball Yang", "Rad Valongo", "Malcolm Turnquest", "Jocelyn Boyd"]
-    
-        private static let allPreviousPairs = [
-            "Hildy Abreu" : ["Kevin Natera","Ayoola Abudu"],
-            "Alyson Abril" : ["Jocelyn Boyd","Sam Roman","Malcolm Turnquest"],
-            "Ayoola Abudu" : ["Adam Jackson","Kary Martinez", "Hildy Abreu"],
-            "Jocelyn Boyd" : ["Alyson Abril","Eric Widjaja", "Angela Garrovillas"],
-            "Bee Brown" : ["Malcolm Turnquest","Jack Wong","Anthony Gonzalez"],
-            "Krystal Campbell" : ["Sunni Tang", "Sam Roman"],
-            "Ian Cervone" : ["Kary Martinez","Michelle Cueva","Neema Philippe"],
-            "Michelle Cueva" : ["Alex Legaspi","Ian Cervone","Rad Valongo"],
-            "Levi Davis" : ["Kimball Yang","Mariel Hoepelman"],
-            "Angela Garrovillas" : ["Liana Norman","Alex Legaspi","Eric Widjaja","Jocelyn Boyd"],
-            "Anthony Gonzalez" : ["Eric Widjaja","Eric Mei","Sunni Tang","Bee Brown"],
-            "Mariel Hoepelman" : ["Tia Lendor","Eric Widjaja","Levi Davis"],
-            "Adam Jackson" : ["Ayoola Abudu","Tia Lendor"],
-            "Alex Legaspi" : ["Michelle Cueva","Angela Garrovillas","Phoenix McKnight"],
-            "Tia Lendor" : ["Mariel Hoepelman", "Adam Jackson"],
-            "Kary Martinez" : ["Ian Cervone","Ayoola Abudu","Liana Norman"],
-            "Phoenix McKnight" : ["Eric Mei","Rad Valongo","Alex Legaspi"],
-            "Eric Mei" : ["Phoenix McKnight","Anthony Gonzalez","Sunni Tang","Kimball Yang"],
-            "Kevin Natera" : ["Neema Philippe","Hildy Abreu","Jason Ruan"],
-            "Liana Norman" : ["Angela Garrovillas","Jason Ruan","Kary Martinez"],
-            "Albert Oliveira" : ["Kimball Yang","Aaron Pachesa","Sunni Tang"],
-            "Aaron Pachesa" : ["Jason Ruan","Albert Oliveira","Jack Wong"],
-            "Neema Philippe" : ["Kevin Natera","Ian Cervone"],
-            "Sam Roman" : ["Alyson Abril","Krystal Campbell"],
-            "Jason Ruan" : ["Aaron Pachesa","Liana Norman","Kevin Natera"],
-            "Sunni Tang" : ["Krystal Campbell","Anthony Gonzalez","Eric Mei","Albert Oliveira"],
-            "Malcolm Turnquest" : ["Bee Brown","Alyson Abril"],
-            "Jack Wong" : ["Bee Brown","Aaron Pachesa"],
-            "Eric Widjaja" : ["Anthony Gonzalez", "Mariel Hoepelman","Jocelyn Boyd","Angela Garrovillas"],
-            "Kimball Yang" : ["Albert Oliveira","Levi Davis","Eric Mei"],
-            "Rad Valongo": ["Phoenix McKnight","Michelle Cueva"]
-        ]
+        static let allFellows = [Fellow(name: "Rad Valongo", pastMatches: ["Phoenix McKnight", "Michelle Cueva", "Jocelyn Boyd"], timesAtBoard: 0), Fellow(name: "Kevin Natera", pastMatches: ["Neema Philippe", "Hildy Abreu", "Jason Ruan", "Alex Legaspi"], timesAtBoard: 0), Fellow(name: "Hildy Abreu", pastMatches: ["Kevin Natera", "Ayoola Abudu", "Jack Wong"], timesAtBoard: 0), Fellow(name: "Eric Widjaja", pastMatches: ["Anthony Gonzalez", "Mariel Hoepelman", "Jocelyn Boyd", "Angela Garrovillas", "Kary Martinez"], timesAtBoard: 0), Fellow(name: "Angela Garrovillas", pastMatches: ["Liana Norman", "Alex Legaspi", "Eric Widjaja", "Jocelyn Boyd", "Alyson Abril"], timesAtBoard: 0), Fellow(name: "Albert Oliveira", pastMatches: ["Kimball Yang", "Aaron Pachesa", "Sunni Tang", "Bee Brown"], timesAtBoard: 0), Fellow(name: "Jack Wong", pastMatches: ["Bee Brown", "Aaron Pachesa", "Hildy Abreu"], timesAtBoard: 0), Fellow(name: "Sunni Tang", pastMatches: ["Krystal Campbell", "Anthony Gonzalez", "Eric Mei", "Albert Oliveira", "Tia Lendor"], timesAtBoard: 0), Fellow(name: "Kary Martinez", pastMatches: ["Ian Cervone", "Ayoola Abudu", "Liana Norman", "Eric Widjaja"], timesAtBoard: 0), Fellow(name: "Michelle Cueva", pastMatches: ["Alex Legaspi", "Ian Cervone", "Rad Valongo", "Anthony Gonzalez"], timesAtBoard: 0), Fellow(name: "Kimball Yang", pastMatches: ["Albert Oliveira", "Levi Davis", "Eric Mei", "Sam Roman"], timesAtBoard: 0), Fellow(name: "Alyson Abril", pastMatches: ["Jocelyn Boyd", "Sam Roman", "Malcolm Turnquest", "Angela Garrovillas"], timesAtBoard: 0), Fellow(name: "Levi Davis", pastMatches: ["Kimball Yang", "Mariel Hoepelman", "Jason Ruan"], timesAtBoard: 0), Fellow(name: "Krystal Campbell", pastMatches: ["Sunni Tang", "Sam Roman", "Adam Jackson"], timesAtBoard: 0), Fellow(name: "Phoenix McKnight", pastMatches: ["Eric Mei", "Rad Valongo", "Alex Legaspi", "Aaron Pachesa"], timesAtBoard: 0), Fellow(name: "Liana Norman", pastMatches: ["Angela Garrovillas", "Jason Ruan", "Kary Martinez", "Ayoola Abudu"], timesAtBoard: 0), Fellow(name: "Sam Roman", pastMatches: ["Alyson Abril", "Krystal Campbell", "Kimball Yang"], timesAtBoard: 0), Fellow(name: "Alex Legaspi", pastMatches: ["Michelle Cueva", "Angela Garrovillas", "Phoenix McKnight", "Kevin Natera"], timesAtBoard: 0), Fellow(name: "Aaron Pachesa", pastMatches: ["Jason Ruan", "Albert Oliveira", "Jack Wong", "Phoenix McKnight"], timesAtBoard: 0), Fellow(name: "Adam Jackson", pastMatches: ["Ayoola Abudu", "Tia Lendor", "Krystal Campbell"], timesAtBoard: 0), Fellow(name: "Eric Mei", pastMatches: ["Phoenix McKnight", "Anthony Gonzalez", "Sunni Tang", "Kimball Yang", "Neema Philippe"], timesAtBoard: 0), Fellow(name: "Bee Brown", pastMatches: ["Malcolm Turnquest", "Jack Wong", "Anthony Gonzalez", "Albert Oliveira"], timesAtBoard: 0), Fellow(name: "Jason Ruan", pastMatches: ["Aaron Pachesa", "Liana Norman", "Kevin Natera", "Levi Davis"], timesAtBoard: 0), Fellow(name: "Anthony Gonzalez", pastMatches: ["Eric Widjaja", "Eric Mei", "Sunni Tang", "Bee Brown", "Michelle Cueva"], timesAtBoard: 0), Fellow(name: "Tia Lendor", pastMatches: ["Mariel Hoepelman", "Adam Jackson", "Sunni Tang"], timesAtBoard: 0), Fellow(name: "Neema Philippe", pastMatches: ["Kevin Natera", "Ian Cervone", "Eric Mei"], timesAtBoard: 0), Fellow(name: "Jocelyn Boyd", pastMatches: ["Alyson Abril", "Eric Widjaja", "Angela Garrovillas", "Rad Valongo"], timesAtBoard: 0), Fellow(name: "Ayoola Abudu", pastMatches: ["Adam Jackson", "Kary Martinez", "Hildy Abreu", "Liana Norman"], timesAtBoard: 0)]
         
-        static func getPreviousPairs(forName name: String) -> [String] {
-            return allPreviousPairs[name] ?? [String]()
-        }
     }
 }
