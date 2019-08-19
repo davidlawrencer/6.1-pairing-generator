@@ -21,7 +21,7 @@ class ClassroomViewController: UIViewController {
         if let pair = myClassroom.createAndReturnNewPair() {
             updateViewUsingPair(pair: pair)
         } else {
-            presentCompletedMatchingAlert()
+            prepareForResultsController()
         }
     }
     
@@ -37,12 +37,15 @@ class ClassroomViewController: UIViewController {
         bottomPairImage.image = pair.rhs.getProfileImage()
     }
     
+    private func prepareForResultsController(){
+        presentCompletedMatchingAlert()
+    }
+    
     private func presentCompletedMatchingAlert() {
         let alert = UIAlertController(title: "Sorry Bruv", message: "All fellows have been matched", preferredStyle: .alert)
         let alertAction = UIAlertAction(title: NSLocalizedString("OK", comment: "Default action"), style: .default, handler: nil)
         alert.addAction(alertAction)
         self.present(alert, animated: true)
-        print(self.myClassroom.pairs)
     }
 }
 

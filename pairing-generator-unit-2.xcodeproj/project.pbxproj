@@ -97,6 +97,14 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		540AB7A923074F35007B790B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				5425121322F082D8002330F0 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		5425120322F082D8002330F0 = {
 			isa = PBXGroup;
 			children = (
@@ -120,7 +128,7 @@
 		5425120E22F082D8002330F0 /* pairing-generator-unit-2 */ = {
 			isa = PBXGroup;
 			children = (
-				5425121322F082D8002330F0 /* Main.storyboard */,
+				540AB7A923074F35007B790B /* Views */,
 				540AB7532301FDBF007B790B /* Controllers */,
 				54C27D2622F7365700BFF13E /* Models */,
 				54C27D2722F7366300BFF13E /* Helpers */,
